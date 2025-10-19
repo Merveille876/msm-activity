@@ -1,0 +1,42 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* 🎨 Variables CSS – thème clair par défaut */
+:root {
+  --color-background: #f9fafb; /* gris très clair */
+  --color-foreground: #111827; /* gris foncé élégant */
+  --color-secondary: #2563eb; /* bleu moderne */
+  --color-accent: #06b6d4; /* cyan doux */
+  --gradient-primary: linear-gradient(135deg, #2563eb, #06b6d4);
+  --gradient-accent: linear-gradient(90deg, #06b6d4, #67e8f9);
+}
+
+/* 🌙 Thème sombre */
+[data-theme="dark"] {
+  --color-background: #0f172a; /* bleu nuit */
+  --color-foreground: #f1f5f9; /* gris clair */
+  --color-secondary: #3b82f6;
+  --color-accent: #22d3ee;
+  --gradient-primary: linear-gradient(135deg, #1e3a8a, #06b6d4);
+  --gradient-accent: linear-gradient(90deg, #06b6d4, #67e8f9);
+}
+
+/* 🧭 Transitions et styles globaux */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.text-primary { color: var(--color-foreground); }
+.bg-light { background-color: var(--color-background); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-gradient-primary { background: var(--gradient-primary); }
+.bg-gradient-accent { background: var(--gradient-accent); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
