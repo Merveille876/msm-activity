@@ -23,13 +23,19 @@ const articles = [
     image: "/images/blog-nextjs.png",
     date: "5 Septembre 2025",
   },
+  {
+    slug: "scrum-vs-kanban",
+    title: "Scrum vs Kanban : quelle méthode agile choisir ?",
+    image: "/images/blog-agile.png",
+    date: "1 Septembre 2025",
+  },
 ];
 
 export default function BlogPage() {
   return (
     <section className="max-w-6xl mx-auto py-20 px-6 sm:px-12">
       <h1 className="text-4xl md:text-5xl font-extrabold mb-12 text-primary text-center">
-        {"📝 Blog"}
+        📝 Blog
       </h1>
 
       <div className="grid gap-10 sm:grid-cols-2">
@@ -52,14 +58,10 @@ export default function BlogPage() {
                 />
               </div>
               <div className="p-6">
-                <h2 className="text-xl font-semibold text-primary mb-1">
-                  {article.title}
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  {article.date}
-                </p>
+                <h2 className="text-xl font-semibold text-primary mb-1">{article.title}</h2>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">{article.date}</p>
                 <span className="mt-4 inline-block px-5 py-2 bg-accent text-white rounded-full shadow text-sm font-medium transition transform hover:scale-105">
-                  Lire l&apos;article
+                  Lire l'article
                 </span>
               </div>
             </Link>
