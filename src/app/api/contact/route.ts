@@ -43,7 +43,9 @@ export async function GET() {
     console.error(error);
     return NextResponse.json({ message: "Erreur serveur" }, { status: 500 });
   } finally {
-    pool && (await pool.close());
+    if (pool) {
+      await pool.close();
+    }
   }
 }
 
@@ -76,7 +78,9 @@ export async function POST(req: NextRequest) {
     console.error(error);
     return NextResponse.json({ message: "Erreur serveur" }, { status: 500 });
   } finally {
-    pool && (await pool.close());
+    if (pool) {
+      await pool.close();
+    }
   }
 }
 
@@ -132,6 +136,8 @@ export async function PUT(req: NextRequest) {
       { status: 500 }
     );
   } finally {
-    pool && (await pool.close());
+    if (pool) {
+      await pool.close();
+    }
   }
 }
