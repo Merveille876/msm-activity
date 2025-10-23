@@ -71,7 +71,7 @@ export default function AboutPage() {
               Contactez-moi
             </a>
             <a
-              href="/CV_Sandra_Merveille_FR.pdf"
+              href="/sandra_cv_pro_vf.pdf"
               target="_blank"
               className="px-6 py-2 border border-accent text-accent rounded-full hover:bg-accent hover:text-white transition"
             >

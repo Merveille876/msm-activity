@@ -17,8 +17,6 @@ export default function Navbar() {
   const menuItems = [
     { href: "/about", label: { fr: "À propos", en: "About" }, icon: FaHome, color: "bg-blue-500" },
     { href: "/services", label: { fr: "Services", en: "Services" }, icon: FaCogs, color: "bg-green-500" },
-    { href: "/portfolio", label: { fr: "Portfolio", en: "Portfolio" }, icon: FaProjectDiagram, color: "bg-purple-500" },
-    { href: "/blog", label: { fr: "Blog", en: "Blog" }, icon: FaBlog, color: "bg-pink-500" },
     { href: "/contact", label: { fr: "Contact", en: "Contact" }, icon: FaEnvelope, color: "bg-yellow-500" },
   ];
 
